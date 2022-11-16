@@ -1,7 +1,7 @@
 import sys
 
-infile1 = open("/home_b/gargi/project_muc/attach_sugar_mucin/sug_bondnew_muc2.txt", "r")
-outfile = open("/home_b/gargi/project_muc/attach_sugar_mucin/out_new.txt", "w")
+infile1 = open("/home_b/gargi/project_muc/compact_muc2/5_percent_gly/glycan_5_bond_mod.txt", "r")
+outfile = open("/home_b/gargi/project_muc/compact_muc2/5_percent_gly/muc_5percent_gly.ndx", "w")
 
 prot_res = []
 sug_res = []
@@ -31,7 +31,7 @@ for j in range(1,16885):
 sp_01 = ["\n","[ system ]","\n"]
 outfile.writelines(sp_01)
 count11 = 0 
-for j in range(1,47211):
+for j in range(1,41074):
     count11 = count11 + 1
     if count11 <= 15:
         sp_11 = [str(j), " "]

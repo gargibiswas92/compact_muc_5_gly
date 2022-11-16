@@ -1,0 +1,43 @@
+
+1. First used glycan_pr.py to randomly select five percent of glycosylation sites (generates glycan_pr_5_pct.txt)
+
+2. Then run attach_final.py to generate the cooordinates of the sugar molecules (generates glycan_5_coord.txt, glycan_5_bond.txt, glycan_5_def.txt, glycan_5_gro.txt,
+ abandoned2.txt)
+
+3. Modified glycan_5_bond.txt using rem_extra_space.py and generated glycan_5_bond_mod.txt (There was a small bug in the attach_final.py)
+
+4. Ran write_dihedrals.py to write dihedrals (attach_final.py did not write the dihedrals, generates muc2_5_dihedral.txt)
+
+5. Ran adjust_top.py to adjust the topology file
+
+6. Ran adjust_gro.py to adjust the coordinate file
+
+7. Ran make_index.py to generate the index file
+
+#With the .top, .gro and .ndx file now one can run a simulation
+
+#confine in a box
+
+gmx editconf -f muc2_5percent_gly.gro -c -d 500 -o muc2_5percent_gly_center.gro -bt cubic
+
+#energy minimization
+
+gmx grompp -f minim.mdp -c muc2_5percent_gly_center.gro -p muc2_5percent_gly.top -o minim_5percent_gly.tpr -maxwarn 2 -n muc_5percent_gly.ndx
+
+gmx mdrun -s minim_5percent_gly.tpr -noddcheck -v -deffnm minim_5percent_gly
+
+#Crashes during MDRUN
+
+Program:     gmx mdrun, version 2020.6
+Source file: src/gromacs/mdlib/sim_util.cpp (line 465)
+
+Fatal error:
+Step 1: The total potential energy is -nan, which is not finite. The LJ and
+electrostatic contributions to the energy are 3.96411e+06 and 0, respectively.
+A non-finite potential energy can be caused by overlapping interactions in
+bonded interactions or very large or Nan coordinate values. Usually this is
+caused by a badly- or non-equilibrated initial configuration, incorrect
+interactions or parameters in the topology.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
