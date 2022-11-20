@@ -1,7 +1,7 @@
 import sys
 
-infile1 = open("/home_b/gargi/project_muc/attach_sugar_mucin/sug_bondnew_muc2.txt", "r")
-outfile = open("/home_b/gargi/project_muc/attach_sugar_mucin/out_new.txt", "w")
+infile1 = open("/home_b/gargi/project_muc/compact_muc2/5_percent_gly/new_attach/check2_cutoff_3/test2/glycan_5_bond_mod.txt", "r")
+outfile = open("/home_b/gargi/project_muc/compact_muc2/5_percent_gly/new_attach/check2_cutoff_3/test2/muc_5percent_gly2.ndx", "w")
 
 prot_res = []
 sug_res = []
@@ -14,8 +14,439 @@ for line in infile1:
     sug_res.append(int(a))
     prot_res.append(int(b))
     count_bond = count_bond + 1
-    
-sp_0 = ["[ body ]","\n"]
+
+
+sz1 = ["[ 1 ]", "\n"]
+outfile.writelines(sz1)
+count1 = 0
+for j in range(1,1207):
+    count1 = count1 + 1
+    if count1 <= 15:
+        sm1 = [str(j), " "]
+        outfile.writelines(sm1)
+    else:
+        sm2 = ["\n"]
+        outfile.writelines(sm2)
+        count1 = 0
+        continue
+
+sz2 = ["\n", "[ 2 ]", "\n"]
+outfile.writelines(sz2)
+count2 = 0
+for j in range(1207,2413):
+    count2 = count2 + 1
+    if count2 <= 15:
+        sm3 = [str(j), " "]
+        outfile.writelines(sm3)
+    else:
+        sm4 = ["\n"]
+        outfile.writelines(sm4)
+        count2 = 0
+        continue
+
+sz3 = ["\n", "[ 3 ]", "\n"]
+outfile.writelines(sz3)
+count3 = 0
+for j in range(2413,3619):
+    count3 = count3 + 1
+    if count3 <= 15:
+        sm5 = [str(j), " "]
+        outfile.writelines(sm5)
+    else:
+        sm6 = ["\n"]
+        outfile.writelines(sm6)
+        count3 = 0
+        continue
+
+sz4 = ["\n", "[ 4 ]", "\n"]
+outfile.writelines(sz4)
+count4 = 0
+for j in range(3619,4825):
+    count4 = count4 + 1
+    if count4 <= 15:
+        sm7 = [str(j), " "]
+        outfile.writelines(sm7)
+    else:
+        sm8 = ["\n"]
+        outfile.writelines(sm8)
+        count4 = 0
+        continue
+
+sz5 = ["\n", "[ 5 ]", "\n"]
+outfile.writelines(sz5)
+count5 = 0
+for j in range(4825,6031):
+    count5 = count5 + 1
+    if count5 <= 15:
+        sm9 = [str(j), " "]
+        outfile.writelines(sm9)
+    else:
+        sm10 = ["\n"]
+        outfile.writelines(sm10)
+        count5 = 0
+        continue    
+
+sz6 = ["\n", "[ 6 ]", "\n"]
+outfile.writelines(sz6)
+count6 = 0
+for j in range(6031,7237):
+    count6 = count6 + 1
+    if count6 <= 15:
+        sm11 = [str(j), " "]
+        outfile.writelines(sm11)
+    else:
+        sm12 = ["\n"]
+        outfile.writelines(sm12)
+        count6 = 0
+        continue
+
+sz7 = ["\n", "[ 7 ]", "\n"]
+outfile.writelines(sz7)
+count7 = 0
+for j in range(7237, 8443):
+    count7 = count7 + 1
+    if count7 <= 15:
+        sm13 = [str(j), " "]
+        outfile.writelines(sm13)
+    else:
+        sm14 = ["\n"]
+        outfile.writelines(sm14)
+        count7 = 0
+        continue
+
+sz8 = ["\n", "[ 8 ]", "\n"]
+outfile.writelines(sz8)
+count8 = 0
+for j in range(8443, 9649):
+    count8 = count8 + 1
+    if count8 <= 15:
+        sm15 = [str(j), " "]
+        outfile.writelines(sm15)
+    else:
+        sm16 = ["\n"]
+        outfile.writelines(sm16)
+        count8 = 0
+        continue
+
+sz9 = ["\n", "[ 9 ]", "\n"]
+outfile.writelines(sz9)
+count9 = 0
+for j in range(9649, 10855):
+    count9 = count9 + 1
+    if count9 <= 15:
+        sm17 = [str(j), " "]
+        outfile.writelines(sm17)
+    else:
+        sm18 = ["\n"]
+        outfile.writelines(sm18)
+        count9 = 0
+        continue
+
+sz10 = ["\n", "[ 10 ]", "\n"]
+outfile.writelines(sz10)
+count10 = 0
+for j in range(10855, 12061):
+    count10 = count10 + 1
+    if count10 <= 15:
+        sm19 = [str(j), " "]
+        outfile.writelines(sm19)
+    else:
+        sm20 = ["\n"]
+        outfile.writelines(sm20)
+        count10 = 0
+        continue
+
+sz11 = ["\n", "[ 11 ]", "\n"]
+outfile.writelines(sz11)
+count11 = 0
+for j in range(12061, 13266):
+    count11 = count11 + 1
+    if count11 <= 15:
+        sm21 = [str(j), " "]
+        outfile.writelines(sm21)
+    else:
+        sm22 = ["\n"]
+        outfile.writelines(sm22)
+        count11 = 0
+        continue
+
+sz12 = ["\n", "[ 12 ]", "\n"]
+outfile.writelines(sz12)
+count12 = 0
+for j in range(13267, 14472):
+    count12 = count12 + 1
+    if count12 <= 15:
+        sm23 = [str(j), " "]
+        outfile.writelines(sm23)
+    else:
+        sm24 = ["\n"]
+        outfile.writelines(sm24)
+        count12 = 0
+        continue
+
+sz13 = ["\n", "[ 13 ]", "\n"]
+outfile.writelines(sz13)
+count13 = 0
+for j in range(14473, 15679):
+    count13 = count13 + 1
+    if count13 <= 15:
+        sm25 = [str(j), " "]
+        outfile.writelines(sm25)
+    else:
+        sm26 = ["\n"]
+        outfile.writelines(sm26)
+        count13 = 0
+        continue
+
+sz14 = ["\n", "[ 14 ]", "\n"]
+outfile.writelines(sz14)
+count14 = 0
+for j in range(15679, 16885):
+    count14 = count14 + 1
+    if count14 <= 15:
+        sm27 = [str(j), " "]
+        outfile.writelines(sm27)
+    else:
+        sm28 = ["\n"]
+        outfile.writelines(sm28)
+        count14 = 0
+        continue
+
+sz15 = ["\n", "[ 15 ]", "\n"]
+outfile.writelines(sz15)
+count15 = 0
+for j in range(16885, 19823):
+    count15 = count15 + 1
+    if count15 <= 15:
+        sm29 = [str(j), " "]
+        outfile.writelines(sm29)
+    else:
+        sm30 = ["\n"]
+        outfile.writelines(sm30)
+        count15 = 0
+        continue
+
+countt1 = 0
+st1 = ["\n"]
+outfile.writelines(st1)
+for i in range(count_bond):
+    if prot_res[i] >= 16885 and prot_res[i] <= 19822:
+        countt1 = countt1 + 1
+        if countt1 <= 15:
+            sm31 = [str(sug_res[i]), " "]
+            outfile.writelines(sm31)
+        else:
+            sm32 =["\n"]
+            outfile.writelines(sm32)
+            countt1 = 0
+            continue
+
+sz16 = ["\n", "[ 16 ]", "\n"]
+outfile.writelines(sz16)
+count16 = 0
+for j in range(19823, 22762):
+    count16 = count16 + 1
+    if count16 <= 15:
+        sm33 = [str(j), " "]
+        outfile.writelines(sm33)
+    else:
+        sm34 = ["\n"]
+        outfile.writelines(sm34)
+        count16 = 0
+        continue
+
+countt2 = 0
+st2 = ["\n"]
+outfile.writelines(st2)
+for i in range(count_bond):
+    if prot_res[i] >= 19823 and prot_res[i] <= 22761:
+        countt2 = countt2 + 1
+        if countt2 <= 15:
+            sm35 = [str(sug_res[i]), " "]
+            outfile.writelines(sm35)
+        else:
+            sm36 =["\n"]
+            outfile.writelines(sm36)
+            countt2 = 0
+            continue
+
+
+sz17 = ["\n", "[ 17 ]", "\n"]
+outfile.writelines(sz17)
+count17 = 0
+for j in range(22672, 25700):
+    count17 = count17 + 1
+    if count17 <= 15:
+        sm37 = [str(j), " "]
+        outfile.writelines(sm37)
+    else:
+        sm38 = ["\n"]
+        outfile.writelines(sm38)
+        count17 = 0
+        continue
+
+countt3 = 0
+st3 = ["\n"]
+outfile.writelines(st3)
+for i in range(count_bond):
+    if prot_res[i] >= 22762 and prot_res[i] <= 25699:
+        countt3 = countt3 + 1
+        if countt3 <= 15:
+            sm39 = [str(sug_res[i]), " "]
+            outfile.writelines(sm39)
+        else:
+            sm40 =["\n"]
+            outfile.writelines(sm40)
+            countt3 = 0
+            continue
+
+sz18 = ["\n", "[ 18 ]", "\n"]
+outfile.writelines(sz18)
+count18 = 0
+for j in range(25700, 28639):
+    count18 = count18 + 1
+    if count18 <= 15:
+        sm41 = [str(j), " "]
+        outfile.writelines(sm41)
+    else:
+        sm42 = ["\n"]
+        outfile.writelines(sm42)
+        count18 = 0
+        continue
+
+countt4 = 0
+st4 = ["\n"]
+outfile.writelines(st4)
+for i in range(count_bond):
+    if prot_res[i] >= 25700 and prot_res[i] <= 28638:
+        countt4 = countt4 + 1
+        if countt4 <= 15:
+            sm43 = [str(sug_res[i]), " "]
+            outfile.writelines(sm43)
+        else:
+            sm44 =["\n"]
+            outfile.writelines(sm44)
+            countt4 = 0
+            continue
+
+sz19 = ["\n", "[ 19 ]", "\n"]
+outfile.writelines(sz19)
+count19 = 0
+for j in range(28639, 31577):
+    count19 = count19 + 1
+    if count19 <= 15:
+        sm45 = [str(j), " "]
+        outfile.writelines(sm45)
+    else:
+        sm46 = ["\n"]
+        outfile.writelines(sm46)
+        count19 = 0
+        continue
+
+countt5 = 0
+st5 = ["\n"]
+outfile.writelines(st5)
+for i in range(count_bond):
+    if prot_res[i] >= 28639 and prot_res[i] <= 31576:
+        countt5 = countt5 + 1
+        if countt5 <= 15:
+            sm47 = [str(sug_res[i]), " "]
+            outfile.writelines(sm47)
+        else:
+            sm48 =["\n"]
+            outfile.writelines(sm48)
+            countt5 = 0
+            continue
+
+sz20 = ["\n", "[ 20 ]", "\n"]
+outfile.writelines(sz20)
+count20 = 0
+for j in range(31577, 34516):
+    count20 = count20 + 1
+    if count20 <= 15:
+        sm49 = [str(j), " "]
+        outfile.writelines(sm49)
+    else:
+        sm50 = ["\n"]
+        outfile.writelines(sm50)
+        count20 = 0
+        continue
+
+countt6 = 0
+st6 = ["\n"]
+outfile.writelines(st6)
+for i in range(count_bond):
+    if prot_res[i] >= 31577 and prot_res[i] <= 34515:
+        countt6 = countt6 + 1
+        if countt6 <= 15:
+            sm51 = [str(sug_res[i]), " "]
+            outfile.writelines(sm51)
+        else:
+            sm52 =["\n"]
+            outfile.writelines(sm52)
+            countt6 = 0
+            continue
+
+sz21 = ["\n", "[ 21 ]", "\n"]
+outfile.writelines(sz21)
+count21 = 0
+for j in range(34516, 37454):
+    count21 = count21 + 1
+    if count21 <= 15:
+        sm53 = [str(j), " "]
+        outfile.writelines(sm53)
+    else:
+        sm54 = ["\n"]
+        outfile.writelines(sm54)
+        count21 = 0
+        continue
+
+countt7 = 0
+st7 = ["\n"]
+outfile.writelines(st7)
+for i in range(count_bond):
+    if prot_res[i] >= 34516 and prot_res[i] <= 37453:
+        countt7 = countt7 + 1
+        if countt7 <= 15:
+            sm55 = [str(sug_res[i]), " "]
+            outfile.writelines(sm55)
+        else:
+            sm56 =["\n"]
+            outfile.writelines(sm56)
+            countt7 = 0
+            continue
+
+
+sz22 = ["\n", "[ 22 ]", "\n"]
+outfile.writelines(sz22)
+count22 = 0
+for j in range(37454, 40393):
+    count22 = count22 + 1
+    if count22 <= 15:
+        sm57 = [str(j), " "]
+        outfile.writelines(sm57)
+    else:
+        sm58 = ["\n"]
+        outfile.writelines(sm58)
+        count22 = 0
+        continue
+
+countt8 = 0
+st8 = ["\n"]
+outfile.writelines(st8)
+for i in range(count_bond):
+    if prot_res[i] >= 37454 and prot_res[i] <= 40392:
+        countt8 = countt8 + 1
+        if countt8 <= 15:
+            sm59 = [str(sug_res[i]), " "]
+            outfile.writelines(sm59)
+        else:
+            sm60 =["\n"]
+            outfile.writelines(sm60)
+            countt8 = 0
+            continue
+
+sp_0 = ["\n", "[ body ]","\n"]
 outfile.writelines(sp_0)
 count1 = 0 
 for j in range(1,16885):
@@ -24,28 +455,73 @@ for j in range(1,16885):
         sp_1 = [str(j), " "]
         outfile.writelines(sp_1)
     else:
-        sp_2 = ["\n"]
+        sp_2 = ["\n", str(j), " "]
         outfile.writelines(sp_2)
         count1 = 0
         continue
+
+sp_02 = ["\n","[ tails ]","\n"]
+outfile.writelines(sp_02)
+countp = 0
+for j in range(16885,40502):
+    countp = countp + 1
+    if countp <= 15:
+        sp_p = [str(j), " "]
+        outfile.writelines(sp_p)
+    else:
+        sp_pp = ["\n", str(j), " "]
+        outfile.writelines(sp_pp)
+        countp = 0
+        continue
+
+
 sp_01 = ["\n","[ system ]","\n"]
 outfile.writelines(sp_01)
 count11 = 0 
-for j in range(1,47211):
+for j in range(1,40502):
     count11 = count11 + 1
     if count11 <= 15:
         sp_11 = [str(j), " "]
         outfile.writelines(sp_11)
     else:
-        sp_21 = ["\n"]
+        sp_21 = ["\n", str(j), " "]
         outfile.writelines(sp_21)
         count11 = 0
         continue
+
+count_line_x = 0
+ss_x = ["\n","[ tail_a1 ]", "\n"]
+outfile.writelines(ss_x)
+for i in range(count_bond):
+    if prot_res[i] >= 20261 and prot_res[i] <= 20761:
+        count_line_x = count_line_x + 1
+        if count_line_x <= 15:
+            ss0x = [str(sug_res[i]), " "]
+            outfile.writelines(ss0x)
+        else:
+            ss1x =["\n"]
+            outfile.writelines(ss1x)
+            count_line_x = 0
+            continue
+ss_0 = ["\n"]
+outfile.writelines(ss_0)
+count_line_y = 0
+for j in range(20261,20761):
+    count_line_y = count_line_y + 1
+    if count_line_y <= 15:
+        ss0_0y = [str(j), " "]
+        outfile.writelines(ss0_0y)
+    else:
+        ss1_0y = ["\n"]
+        outfile.writelines(ss1_0y)
+        count_line_y = 0
+        continue
+
 count_line = 0
 ss = ["\n","[ tail_a2 ]", "\n"]
 outfile.writelines(ss)
 for i in range(count_bond):
-    if prot_res[i] >= 20261 and prot_res[i] <= 21261:
+    if prot_res[i] >= 20761 and prot_res[i] <= 21261:
         count_line = count_line + 1
         if count_line <= 15:
             ss0 = [str(sug_res[i]), " "]
@@ -58,8 +534,7 @@ for i in range(count_bond):
 ss_0 = ["\n"]
 outfile.writelines(ss_0)
 count_line = 0 
-j = 20261
-for j in range(20261,21262):
+for j in range(20761,21262):
     count_line = count_line + 1
     if count_line <= 15:
         ss0_0 = [str(j), " "]
